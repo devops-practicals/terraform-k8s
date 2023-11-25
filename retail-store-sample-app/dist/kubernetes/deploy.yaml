@@ -155,10 +155,10 @@ spec:
             periodSeconds: 3
           resources:
             limits:
-              memory: 256Mi
+              memory: 6Mi
             requests:
-              cpu: 128m
-              memory: 256Mi
+              cpu: 8m
+              memory: 6Mi
           volumeMounts:
             - mountPath: /tmp
               name: tmp-volume
@@ -345,7 +345,7 @@ spec:
             limits:
               memory: 512Mi
             requests:
-              cpu: 128m
+              cpu: 8m
               memory: 512Mi
           volumeMounts:
             - mountPath: /tmp
@@ -512,10 +512,10 @@ spec:
             periodSeconds: 3
           resources:
             limits:
-              memory: 256Mi
+              memory: 6Mi
             requests:
-              cpu: 128m
-              memory: 256Mi
+              cpu: 8m
+              memory: 6Mi
           volumeMounts:
             - mountPath: /tmp
               name: tmp-volume
@@ -728,7 +728,7 @@ spec:
             limits:
               memory: 512Mi
             requests:
-              cpu: 128m
+              cpu: 8m
               memory: 512Mi
           volumeMounts:
             - mountPath: /tmp
@@ -980,7 +980,7 @@ spec:
             limits:
               memory: 512Mi
             requests:
-              cpu: 128m
+              cpu: 8m
               memory: 512Mi
           volumeMounts:
             - mountPath: /tmp
@@ -1228,10 +1228,10 @@ spec:
             periodSeconds: 3
           resources:
             limits:
-              memory: 256Mi
+              memory: 6Mi
             requests:
-              cpu: 128m
-              memory: 256Mi
+              cpu: 8m
+              memory: 6Mi
           volumeMounts:
             - mountPath: /tmp
               name: tmp-volume
@@ -1380,10 +1380,10 @@ spec:
             periodSeconds: 3
           resources:
             limits:
-              memory: 128Mi
+              memory: 8mi
             requests:
-              cpu: 128m
-              memory: 128Mi
+              cpu: 8m
+              memory: 8mi
           volumeMounts:
             - mountPath: /tmp
               name: tmp-volume
@@ -1516,7 +1516,7 @@ spec:
             limits:
               memory: 512Mi
             requests:
-              cpu: 128m
+              cpu: 8m
               memory: 512Mi
           volumeMounts:
             - mountPath: /tmp
