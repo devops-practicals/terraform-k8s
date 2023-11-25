@@ -13,7 +13,12 @@ data "aws_eks_cluster_auth" "cluster" {
 }
 
 locals {
-  cluster_name = "devops-practicals-eks"
+  cluster_name = "devops-practicals-${random_string.suffix.result}"
+}
+
+resource "random_string" "suffix" {
+  length  = 8
+  special = false
 }
 
 provider "kubernetes" {
