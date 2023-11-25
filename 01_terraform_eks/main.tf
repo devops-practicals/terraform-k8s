@@ -13,7 +13,7 @@ data "aws_eks_cluster_auth" "cluster" {
 }
 
 locals {
-  cluster_name = "devops-practicals-${random_string.suffix.result}"
+  cluster_name = "devops-practicals-development"
 }
 
 resource "random_string" "suffix" {
