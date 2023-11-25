@@ -27,18 +27,18 @@ provider "kubernetes" {
   token                  = data.aws_eks_cluster_auth.cluster.token
 }
 
-module "eks-kubeconfig" {
-  source  = "hyperbadger/eks-kubeconfig/aws"
-  version = "1.0.0"
+# module "eks-kubeconfig" {
+#   source  = "hyperbadger/eks-kubeconfig/aws"
+#   version = "1.0.0"
 
-  depends_on = [module.eks]
-  cluster_id = module.eks.cluster_id
-}
+#   depends_on = [module.eks]
+#   cluster_id = module.eks.cluster_id
+# }
 
-resource "local_file" "kubeconfig" {
-  content  = module.eks-kubeconfig.kubeconfig
-  filename = "kubeconfig_${local.cluster_name}"
-}
+# resource "local_file" "kubeconfig" {
+#   content  = module.eks-kubeconfig.kubeconfig
+#   filename = "kubeconfig_${local.cluster_name}"
+# }
 
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
